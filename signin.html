@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="signin">
+        <div class="signin-title">
+            <div class="signin-content text-center">Sign In</div>
+        </div>
+        <form class="signin-form" method="POST" onsubmit="return check()">
+            <div class="login-fail-msg text-center" id="signin-error">
+                <span class="error-msg" id="login-error"></span>
+            </div>
+            <div class="user-name">
+                <input type="text" name="user_name" id="userName" placeholder="Enter Email">
+                <!-- onfocus="ValidateEmail()" -->
+                <span class="error-msg"></span>
+            </div>
+            <div class="user-password">
+                <input type="password" name="user_passwod" id="userPw" placeholder="Enter Password">
+                <span class="error-msg"></span>
+            </div>
+            <div class="text-right"><span class="gradient-text">Forgot </span><a class="green-text" href="#">Username / Password</a></div>
+            <div class="sign-in-btn">
+                <input type="submit" value="SIGN IN">
+            </div>
+        </form>
+        <div class="reg-here text-center">
+                <p><span class="gradient-text">Don't have an account ?</span></p>
+          <p> <a class="green-text" href="signup.html">SIGN UP HERE</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

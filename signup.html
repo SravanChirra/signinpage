@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="signin">
+        <div class="signin-title">
+            <div class="signin-content text-center">Sign Up</div>
+        </div>
+        <form class="signin-form" method="POST">
+            <!-- return regFormValidation() && -->
+            <div class="user-name">
+                <input type="email" name="user_name" id="user_name" placeholder="Enter Email" >
+                <!-- <span class="error-msg" id="user-name"></span> -->
+            </div>
+            <div class="user-password">
+                <input type="password" name="user_password" id="user_pw" placeholder="Enter Password" >
+                <!-- <span class="error-msg" id="user-pw"></span> -->
+            </div>
+            <div class="user-cpassword">
+                <input type="password" name="user_cpassword" id="user_cpw" placeholder="Confirm Password" >
+                <!-- <span class="error-msg" id="user-cpw"></span> -->
+            </div>
+            <div class="sign-up-btn">
+                <!-- <button class="sign-up-btn1 btn btn-lg btn-block btn-success"  onclick="store()">Submit</button> -->
+                <input type="submit" value="Submit" onclick="store()">
+            </div>
+        </form>
+        <p class="text-center gradient-text" >Already have an Account ? <a class="green-text" href="signin.html">Sign In</a></p>
+    </div>
+</body>
+
+</html>
