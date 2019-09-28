@@ -71,7 +71,7 @@ function check() {
             for (var i = 0; i < detailslist.length; i++) {
                 if (loginUserName == detailslist[i].userName && loginUserPw == detailslist[i].userPw) {
                     // window.location.href = 'https://keep.google.com';
-//                     window.location.href = 'notes.html';
+                    window.location.href = 'signin.html';
                     alert("You are logged in");
 
                     return false;
