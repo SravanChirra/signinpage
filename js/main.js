@@ -86,7 +86,7 @@ function check() {
         else {
             document.getElementById('login-error').innerHTML = "Email doesn't exist, Please register";
              window.location.href = "index.html";
-            return false;
+            //return false;
         }
     }
 }
