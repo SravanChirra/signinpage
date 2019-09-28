@@ -71,7 +71,8 @@ function check() {
             for (var i = 0; i < detailslist.length; i++) {
                 if (loginUserName == detailslist[i].userName && loginUserPw == detailslist[i].userPw) {
                     // window.location.href = 'https://keep.google.com';
-                    window.location.href = 'notes.html';
+//                     window.location.href = 'notes.html';
+                    alert("You are logged in");
 
                     return false;
                 }
@@ -84,7 +85,7 @@ function check() {
         }
         else {
             document.getElementById('login-error').innerHTML = "Email doesn't exist, Please register";
-            // window.location.href = "https://www.facebook.com";
+             window.location.href = "index.html";
             return false;
         }
     }
