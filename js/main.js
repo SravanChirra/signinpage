@@ -14,6 +14,7 @@ function store() {
 
     if (name == "" || pw == "" || cpw == "") {
         alert("Enter all details");
+        return false;
     }
     else if (pw != cpw) {
         alert("pw and cpw doesn't match");
