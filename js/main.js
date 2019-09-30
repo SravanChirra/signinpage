@@ -18,6 +18,7 @@ function store() {
     }
     else if (pw != cpw) {
         alert("pw and cpw doesn't match");
+        return false;
     }
     else {
         var userObj = {
